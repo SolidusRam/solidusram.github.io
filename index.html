@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<section class="intro">
+  <!-- TODO: write this in your own words. -->
+  <h1>Hi, I'm Matteo.</h1>
+  <p>I make games and small experiments, and I write about how they get made: the decisions, the dead ends, and what I learn along the way.</p>
+</section>
+
+<section id="projects" class="section">
+  <h2 class="label">Projects</h2>
+  <ul class="projects">
+    {% for project in site.data.projects %}
+    <li class="project">
+      <div class="project-head">
+        <h3>{{ project.name }}</h3>
+        <span class="meta">{{ project.when }} · {{ project.tech }}</span>
+      </div>
+      <p>{{ project.summary }}</p>
+      <p class="links">
+        {% for link in project.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="writing" class="section">
+  <h2 class="label">Writing</h2>
+  {% if site.posts.size > 0 %}
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <time class="meta" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="muted">The first post is on its way.</p>
+  {% endif %}
+</section>

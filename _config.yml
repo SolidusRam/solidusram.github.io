@@ -1,0 +1,23 @@
+title: Matteo Parasuco
+description: Games, experiments and notes on how they get made.
+author: Matteo Parasuco
+url: https://solidusram.github.io
+baseurl: ""
+github_username: SolidusRam
+lang: en
+
+permalink: /:year/:month/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
