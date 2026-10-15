@@ -6,6 +6,8 @@ layout: default
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <time class="meta" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %b %Y' }}</time>
+    {% assign summary = post.description | default: post.subtitle %}
+    {% if summary %}<p class="summary">{{ summary }}</p>{% endif %}
   </li>
   {% else %}
   <li class="muted">Nothing here yet.</li>
