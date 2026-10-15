@@ -114,22 +114,22 @@ nav a:hover { color: var(--accent); }
 
 .posts { list-style: none; margin: 0; padding: 0; }
 
-.posts li {
+.posts li { padding: 0.5rem 0; }
+
+.posts .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   gap: 0 1rem;
-  padding: 0.45rem 0;
 }
 
 .posts time { white-space: nowrap; }
-.posts > li > a { font-size: 1.15rem; text-decoration: none; color: var(--ink); }
-.posts > li > a:hover { color: var(--accent); text-decoration: underline; }
+.posts .row > a { font-size: 1.15rem; text-decoration: none; color: var(--ink); }
+.posts .row > a:hover { color: var(--accent); text-decoration: underline; }
 .posts .meta a { color: var(--muted); }
 
 .posts .summary {
-  flex-basis: 100%;
   margin: 0.15rem 0 0;
   color: var(--muted);
   display: -webkit-box;

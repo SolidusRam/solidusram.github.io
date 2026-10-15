@@ -2,6 +2,7 @@
 - name: Frogger 3D
   when: October 2026
   tech: Godot 4, Blender
+  tagline: A frog that punches cars into each other while a wildfire chases it. Made in twelve days with an AI.
   summary: >-
     A 3D homage to Frogger where the frog punches cars into each other while a wildfire
     chases it. An endless-run roguelite with emergent chaos, built in 12 days together
