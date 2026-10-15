@@ -80,7 +80,7 @@ nav a,
   letter-spacing: 0.04em;
 }
 
-nav a { color: var(--muted); text-decoration: none; text-transform: uppercase; }
+nav a { color: var(--muted); text-decoration: none; }
 nav a:hover { color: var(--accent); }
 
 .site-footer {
@@ -102,57 +102,31 @@ nav a:hover { color: var(--accent); }
 
 /* Home */
 
-.intro h1 {
-  font-size: clamp(2rem, 6vw, 2.8rem);
-  line-height: 1.1;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  margin: 0 0 1rem;
-}
-
-.intro p { font-size: 1.2rem; color: var(--muted); margin: 0; max-width: 34rem; }
-
-.section { margin-top: 4rem; }
-
 .label {
   text-transform: uppercase;
   color: var(--muted);
   font-weight: 500;
-  margin: 0 0 1.25rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--rule);
+  margin: 3.5rem 0 0.5rem;
 }
 
 .meta { color: var(--muted); }
 .muted { color: var(--muted); }
 
-.projects, .posts { list-style: none; margin: 0; padding: 0; }
-
-.project + .project { margin-top: 2rem; }
-
-.project-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.25rem 1rem;
-}
-
-.project h3 { font-size: 1.35rem; font-weight: 600; margin: 0; }
-.project p { margin: 0.4rem 0 0; }
-.project .links { font-family: var(--mono); font-size: 0.8rem; }
+.posts { list-style: none; margin: 0; padding: 0; }
 
 .posts li {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  gap: 1rem;
-  padding: 0.5rem 0;
+  gap: 0 1rem;
+  padding: 0.45rem 0;
 }
 
 .posts time { white-space: nowrap; }
-.posts a { font-size: 1.15rem; text-decoration: none; color: var(--ink); }
-.posts a:hover { color: var(--accent); }
+.posts > li > a { font-size: 1.15rem; text-decoration: none; color: var(--ink); }
+.posts > li > a:hover { color: var(--accent); text-decoration: underline; }
+.posts .meta a { color: var(--muted); }
 
 /* Posts and pages */
 

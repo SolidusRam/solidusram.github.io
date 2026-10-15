@@ -14,9 +14,9 @@
   <header class="site-header">
     <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav>
-      <a href="{{ '/' | relative_url }}#projects">Projects</a>
-      <a href="{{ '/' | relative_url }}#writing">Writing</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/about/' | relative_url }}">about</a>
+      <a href="https://github.com/{{ site.github_username }}">github</a>
+      <a href="{{ '/feed.xml' | relative_url }}">rss</a>
     </nav>
   </header>
 
@@ -27,10 +27,6 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <span>© {{ 'now' | date: '%Y' }} {{ site.author }}</span>
-      <span>
-        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-        · <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-      </span>
     </div>
   </footer>
 </body>
